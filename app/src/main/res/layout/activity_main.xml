@@ -1,0 +1,263 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/baccc"
+    android:scrollbars="vertical"
+    tools:context=".MainActivity">
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView22"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="TextView" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="Wybierz jaki komputer chcesz?"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Processor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+        <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+        android:id="@+id/core3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Core i3 i mniej" />
+
+        <CheckBox
+        android:id="@+id/core5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Core i5" />
+
+        <CheckBox
+        android:id="@+id/core79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Core i7 i więcej" />
+        </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="RAM Pamięć"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/gb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4GB" />
+
+        <CheckBox
+            android:id="@+id/gb8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8GB" />
+
+        <CheckBox
+            android:id="@+id/gb16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16GB" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SSD i HDD dyski"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/hdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HDD" />
+
+        <CheckBox
+            android:id="@+id/sdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SDD" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Karty graficzne"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/integrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zintegrowane" />
+
+        <CheckBox
+            android:id="@+id/nvidia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NVIDIA" />
+        <CheckBox
+            android:id="@+id/amdradeon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AMD Radeon" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="System operacyjny"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/windows10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Windows 10" />
+
+        <CheckBox
+            android:id="@+id/macintosh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Macintosh" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Cena"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/mniej3000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mniej 3000 zł" />
+
+        <CheckBox
+            android:id="@+id/wiecej3000alemn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Więcej 3000 zł ale mniej 6000 zł" />
+
+        <CheckBox
+            android:id="@+id/wiecej6000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Więcej 6000 zł" />
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/mysz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mysze" />
+
+        <CheckBox
+            android:id="@+id/drukarki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drukarki" />
+
+        <CheckBox
+            android:id="@+id/flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pen Drive'y" />
+
+    </RadioGroup>
+
+        <Button
+            android:id="@+id/button"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zachowuj wybór" />
+
+        <Button
+            android:id="@+id/button2"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Peryferja"
+            android:text="Wybrać urządzenia peryferyczne " />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ShowResult"
+            android:gravity="center"
+            android:text="Przegląd pasujących komputerów" />
+    <!--<ListView-->
+        <!--android:id="@+id/listView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center" />-->
+</LinearLayout>
+</ScrollView>
